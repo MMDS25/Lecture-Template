@@ -1,0 +1,29 @@
+[project]
+name = "ds-lectures"
+version = "0.1.0"
+description = "Multi-lecture Data Science lectures template with shared infrastructure"
+authors = [{ name = "Your Name" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.23",
+  "pandas>=1.5",
+  "scikit-learn>=1.2",
+  "matplotlib>=3.7",
+  "seaborn>=0.12",
+  "jupyter>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "black>=24.0",
+  "ruff>=0.4",
+  "pytest>=7.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["common"]
